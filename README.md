@@ -9,7 +9,7 @@ Jest to uproszczona aplikacja bankowa implementująca system transferów pienię
 - ✅ Logikę biznesową (transfer pieniędzy, walidacja IBAN, limity)
 - ✅ Testy JUnit 5 z Mockito (pełne pokrycie)
 - ✅ Strukturę Maven + Spring Boot
-- ✅ Błędy do naprawy przez studentów na branchu `develop`
+- ✅ Błędy do naprawy przez studentów na branchu `develop` w klasie testowej TransferServiceBuggyTest
 
 ## 🚀 Quick Start
 
@@ -100,7 +100,7 @@ git push origin feature/your-feature-name
 
 ### Scenariusz 3: Naprawianie Błędów (Zaliczenie)
 
-**Cel:** Znalezienie i naprawienie błędów w kodzie na branchu `develop`
+**Cel:** Znalezienie i naprawienie błędów w klasie testowej na branchu `develop`
 
 1. Przełącz się na branch `develop`:
    ```bash
@@ -110,23 +110,31 @@ git push origin feature/your-feature-name
 
 2. Uruchom testy, aby zobaczyć które są czerwone:
    ```bash
-   mvn test
+   mvn clean test
    ```
 
-3. Przejrzyj błędy i napraw kod w następujących plikach:
-   - `src/main/java/com/bankservice/service/TransferService.java`
-   - `src/main/java/com/bankservice/model/Transfer.java`
+3. Przejrzyj błędy i napraw kod pliku testowym:
+   - `src/test/java/com/bankservice/service/TransferServiceBuggyTest.java`
 
 4. Po naprawie, zatwierdź swoje zmiany:
    ```bash
    git add .
-   git commit -m "fix: fix transfer validation logic"
+   git commit -m "Twój message po naprawieniu testów do tego commita"
    ```
 
 5. Wyślij swoje zmiany:
    ```bash
    git push origin develop
    ```
+
+### Scenariusz 4: Dodatkowe, nieobowiązkowe ćwiczenie na zaliczenie
+
+1. Przejdź na branch `develop` i utwórz nowy branch
+2. Dodaj plik tekstowy w katalogu `resources` gdzie już znajduje się `example.file.txt`
+3. Dodaj etykiete 'opisaną'
+4. Wyślij zmiany do zdalnego repozytorium (pamiętaj o etykiecie)
+5. Przejdź na branch `develop` i zmerguj swój branch
+6. Upewnij się, że zmiany są widoczne na branchu `develop` na zdalnych repozytorium w GitHub
 
 ## 📊 Ćwiczenia do Wykonania na Zajęciach
 
@@ -152,6 +160,7 @@ git branch -a
 
 # Utwórz nową gałąź
 git checkout -b feature/new-feature
+# lub: git switch -c feature/new-feature
 
 # Przełącz się na inną gałąź
 git checkout master
@@ -199,19 +208,9 @@ git push origin feature/my-feature
 git push -u origin feature/my-feature
 ```
 
-## 🐛 Błędy do Naprawienia (Branch `develop`)
-
-Branch `develop` zawiera celowo umieszczone błędy:
-
-1. **Transfer Service** - błędna logika walidacji transferu
-2. **Transfer Model** - brakujące walidacje pól
-3. **Account Repository** - mock zwraca złe dane
-
-**Zadanie zaliczeniowe:** Napraw wszystkie testy na branchu `develop` i wyślij swoje zmiany.
-
 ## 📝 Struktura Commitów - Best Practices
 
-Dobrze sformułowana wiadomość commit'a:
+Przykładowe sformułowania wiadomości commit:
 
 ```
 feat: add new account validation
