@@ -30,7 +30,7 @@ public class Account {
     public boolean hasSufficientFunds(BigDecimal amount) {
         return balance != null && balance.compareTo(amount) >= 0;
     }
-    
+    //todo
     /**
      * Sprawdza czy transfer nie przekracza dziennego limitu
      */
