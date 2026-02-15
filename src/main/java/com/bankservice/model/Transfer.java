@@ -44,3 +44,6 @@ public class Transfer {
     }
 }
 //ghi
+
+//kolejny commit
+//i kolejny
