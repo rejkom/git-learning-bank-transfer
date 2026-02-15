@@ -44,6 +44,6 @@ public class Transfer {
     }
 }
 //ghi
-
+//dodano tag
 //kolejny commit
 //i kolejny
