@@ -33,13 +33,14 @@ public class Transfer {
     public boolean isValid() {
         if (amount == null || amount.compareTo(BigDecimal.ZERO) <= 0) {
             return false;
-        }
+        }//abc
         if (fromAccountIban == null || fromAccountIban.isBlank()) {
             return false;
         }
         if (toAccountIban == null || toAccountIban.isBlank()) {
             return false;
-        }
+        }//abcdef
         return !fromAccountIban.equals(toAccountIban);
     }
 }
+//ghi
