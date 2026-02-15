@@ -40,7 +40,7 @@ public class Account {
     }
     
     /**
-     * Walidacja IBAN - prosta walidacja
+     * Walidacja IBAN - prosta walidacja - abc
      */
     public boolean isValidIban() {
         if (iban == null || iban.isBlank()) {
