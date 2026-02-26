@@ -15,7 +15,7 @@ import java.util.Optional;
 @Repository
 public class AccountRepository {
     
-    // Symulacja bazy danych (w pamięci)
+    // Symulacja bazy danych (w pamięci) abc def ghi jkl
     private final Map<String, Account> accounts = new HashMap<>();
     
     public AccountRepository() {
