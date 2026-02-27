@@ -17,7 +17,9 @@ public class AccountRepository {
     
     // Symulacja bazy danych (w pamięci)
     private final Map<String, Account> accounts = new HashMap<>();
-    
+    //todo: add description
+    //todo: add new task
+    //todo: remember about this task
     public AccountRepository() {
         // Inicjalizuj z testowymi danymi
         initializeTestData();
