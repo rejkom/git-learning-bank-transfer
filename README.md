@@ -122,12 +122,12 @@ git push origin feature/your-feature-name
    git commit -m "Twój message po naprawieniu testów do tego commita"
    ```
 
-5. Wyślij swoje zmiany:
+5. Wyślij swoje zmiany (opcjonalnie, niewymagane na zaliczenie):
    ```bash
    git push origin develop
    ```
 
-### Scenariusz 4: Dodatkowe, nieobowiązkowe ćwiczenie na zaliczenie
+### Scenariusz 4: Dodatkowe, nieobowiązkowe ćwiczenie na zaliczenie (polecane, gdy posiadasz konto na GitHub)
 
 1. Przejdź na branch `develop` i utwórz nowy branch
 2. Dodaj plik tekstowy w katalogu `resources` gdzie już znajduje się `example.file.txt`
