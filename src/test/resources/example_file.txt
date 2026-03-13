@@ -1,0 +1,5 @@
+To jest przykładowy plik.
+Możesz utworzyć podobny plik i dodać go do zdalnego repozytorium.
+
+Zmiany zrobione na zdalnym repo na GitHubie.
+Pamiętajmy o git pull i aktualizacji branchy.
